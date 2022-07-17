@@ -1,20 +1,22 @@
 .account {
  background: none !important; 
+ color: #57606a;
 }
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 7px;
+.odin-project{
+  padding:10px 30px;
+}
+.project{
+  font-size: 20px;
+  color: #57606a;
+}
+.odin-logo {
+    padding: 1px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
-  }
-
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
 * {
   padding: 0;
@@ -27,7 +29,7 @@ body{
   font-family: montserrat;
   }
 nav {
-  background: #0082e6;
+  background: #24292f;
   height: 80px;
   width: 100%;
 }
@@ -54,8 +56,9 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
-  background: #1b9bff;
+
+a:hover{
+  background: white;
   transition: .5s;
 }
 .checkbtn{
@@ -103,7 +106,7 @@ a.active,a:hover{
   }
   a:hover,a.active{
     background: none;
-    color: #0082e6;
+    color: white;
   }
   #check:checked ~ ul{
     left:0;
@@ -122,33 +125,59 @@ a.active,a:hover{
 }
 .header{
   background:white;
-  height: 120px;
-  padding-top: 30px;
+  height:50px;
+  padding-top: 10px;
 }
 .footer{
   background: white;
-  height: 80px;
-  box-sizing: border-box; 
+  height: 50px;
 }
 .footer hr{
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #c9c7c7;
-  width:90%;
+  width:100%;
   margin-left: auto;
   margin-right: auto;
+}
+.footer-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.design{
+  padding:30px 30px;
 }
 .main{
   text-align: left;
   background: white;
   height: 300px;
   font-size: 24px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .aside{
   background: white;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+.list-recipe a {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 1x;
+  border-bottom: 3px solid transparent;
+}
+.list-recipe{
+  overflow: hidden;
+}
+.list-recipe a:hover{
+  border-bottom: 3px solid red;
+}
+
 @media all and (min-width: 800px){
   .main{
     flex: 3;
@@ -172,3 +201,7 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+hr {
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
