@@ -40,6 +40,7 @@ label.logo{
   padding: 0 100px;
   font-weight: bold;
 }
+
 nav ul{
   float:right;
   margin-right: 20px;
@@ -116,28 +117,30 @@ a:hover{
   display: flex;
   flex-flow: row wrap;
   text-align: center;
+  
 }
 .wrapper>*{
   padding:10px;
   margin: 10px;
   flex: 1 100%;
-  border-radius: 10px;
+
 }
 .header{
   background:white;
   height:50px;
   padding-top: 10px;
+  color: #ce973e;
 }
 .footer{
   background: white;
-  height: 50px;
+  text-align: center;
 }
 .footer hr{
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 65px;
+  margin-bottom: auto;
   border: 0;
   border-top: 1px solid #c9c7c7;
-  width:100%;
+  width:95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,36 +149,38 @@ a:hover{
   justify-content: center;
   align-items: center;
 }
-.design{
+.design {
   padding:30px 30px;
 }
-.main{
-  text-align: left;
+.main {
   background: white;
-  height: 300px;
-  font-size: 24px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: auto;
+  text-align: center;
 }
-.aside{
+
+
+.aside {
   background: white;
   font-family: sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.side-header{
+  color: #4a4a4a;
 }
 .list-recipe a {
-  float: center;
+  float: left;
   display: block;
   color: black;
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
-  font-size: 1x;
+  font-size: 15px;
   border-bottom: 3px solid transparent;
 }
 .list-recipe{
   overflow: hidden;
 }
 .list-recipe a:hover{
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #ce973e;
 }
 
 @media all and (min-width: 800px){
@@ -191,6 +196,7 @@ a:hover{
   .footer{
     order: 4;
   }
+  
 }
 @media all and (min-width: 600px){
   .aside{
@@ -205,3 +211,43 @@ hr {
    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: left;
+}
+
+.list-card-1 {
+  padding: 10px;
+  flex: 50%;
+}
+
+.list-card-2 {
+  padding: 10px;
+  flex: 50%;
+}
+.list-card-3 {
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
