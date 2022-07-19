@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes">
     <title>Odin Recipes</title>
     <link href = "assets/css/style.css" rel = "stylesheet">
     <script src="https://kit.fontawesome.com/b9f9c6ef59.js" crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
       </label>
 
       <label class="logo">Project Recipe<i class="fa-solid fa-utensils"></i></label>
-      <ul>
+      <ul class="ul-nav">
         <li><a class="active" href="#">Home</a></li>
         <li><a class="recip" href="#">Recipes</a></li>
         <li><a class="about" href="#">About</a></li>
@@ -28,21 +29,23 @@
       </header>
       <article class="main">
         <div class="flex-container">
-        <section class="list-card-1">
-          <div class="card">
-            <img class="adobo" src="assets/images/adobo.jpg" alt="Chicken Adobo" style="width:100%">
-            <div class="container">
-              <h3><b>Authentic Chicken Adobo</b></h3> 
-              <p> Tender, juicy chicken pieces simmered in a flavorful peppery vinegar sauce.</p> 
+        <a href="recipes/adobo.html">  
+          <section class="list-card-1">
+            <div class="card">
+              <img class="adobo" src="assets/images/adobo.jpg" alt="Chicken Adobo" style="width:100%">
+              <div class="container">
+                <h3><b>Famous Chicken Adobo</b></h3> 
+                <p> Tender, juicy chicken pieces simmered in a flavorful peppery vinegar sauce.</p> 
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </a>
         <section class="list-card-2">
           <div class="card">
             <img src="./assets/images/cover.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-              <h4><b>John Doe</b></h4> 
-                <p>Tender, juicy chicken pieces simmered in a flavorful peppery vinegar sauce.</p>
+              <h3><b>Filipino Beef Steak</b></h3> 
+                <p>This is a very easy recipe to make. A tender cut of beef is sliced thin and marinated with lemon juice and soya sauce for at least an hour or longer.</p>
             </div>
           </div>
         </section>
@@ -50,7 +53,7 @@
           <div class="card">
             <img src="./assets/images/cover.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-              <h4><b>John Doe</b></h4> 
+              <h3><b>John Doe</b></h3> 
               <p>Tender, juicy chicken pieces simmered in a flavorful peppery vinegar sauce.</p>
             </div>
           </div>
@@ -59,13 +62,12 @@
       </article>
       <aside class="aside">
         <h1 class="side-header">Most Popular</h1>
-        <div class="recipe">
-          <ul class="list-recipe">
+        <div class="list-recipe">
+          <ul>
             <li><a>Chicken Adobo</a></li>
             <li><a>Beef Steak</a></li>
             <li><a>Pinakbet</a></li>
-          </ul>
-
+          </ul>          
         </div>
       </aside>
       

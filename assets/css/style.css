@@ -25,9 +25,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-body{
-  font-family: montserrat;
-  }
+
 nav {
   background: #24292f;
   height: 80px;
@@ -39,6 +37,7 @@ label.logo{
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+  
 }
 
 nav ul{
@@ -87,7 +86,7 @@ a:hover{
   .checkbtn{
     display: block;
   }
-  ul{
+  .ul-nav{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -119,6 +118,19 @@ a:hover{
   text-align: center;
   
 }
+.wrapper-list-1{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  }
+
+.wrapper-list-1>*{
+
+  padding:10px;
+  margin: auto;
+  flex: 1 100%; 
+
+} 
 .wrapper>*{
   padding:10px;
   margin: 10px;
@@ -169,6 +181,7 @@ a:hover{
 }
 .side-header{
   color: #4a4a4a;
+  text-align: center;
 }
 @media all and (min-width: 800px){
   .main{
@@ -249,35 +262,154 @@ section div img{
   text-overflow: ellipsis;
   max-width:250px;
 }
-.recipe{
+.list-recipe{
   display: grid;
   font-family: 'Poppins', sans-serif;
-  place-items: center;
+  padding:10px;
+  line-height: 25px;
+  text-align: center;
 }
-.list-recipe li a{ 
+.list-recipe a{ 
   color: #18272F;
   position: relative;
-  text-decoration: none;
 }
-.list-recipe li a::before {
+
+.list-recipe a::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 2px;
   border-radius: 4px;
-  background-color: #18272F;
+  background-color: #ce973e;
   bottom: 0;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform .3s ease-in-out;
+ 
 }
 
-.list-recipe li a:hover::before {
+.list-recipe a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
-.list-recipe{
-  padding:10px;
-  line-height: 30px;
+
+.recipe-body {
+  background: #fff;
+  font: 13px "Open Sans", sans-serif;
+  color: #222;
+  text-align: left;
 }
+
+.recipe-card {
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(240, 241, 243, 1);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(240, 241, 243, 1);
+  box-shadow: 0px 0px 20px 1px rgba(240, 241, 243, 1);
+  border: 1px solid #f0f1f3;
+  width: auto;
+  margin: 10px auto;
+}
+.recipe-card-body {
+  padding: 20px;
+}
+.recipe-card-heading {
+  padding: 0;
+  margin: 0 0 0;
+  color: #444;
+  font: 700 14px/20px Source Sans Pro, sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+}
+.recipe-card-subhead {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.recipe-card-ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  column-count: 1;
+}
+  .recipe-card li {
+    margin-bottom: 5px;
+  }
+  .recipe-card-ingredients li:before {
+    content: "\2022";
+    color: #eb9376;
+    margin-right: 5px;
+  }
+
+
+.recipe-card-nav {
+  margin: 0 0 20px;
+  padding: 0;
+  border-bottom: 1px solid #eb9376;
+}
+  .recipe-card li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  .recipe-card-nav h3:after {
+    content: "";
+    display: block;
+    width: 0%;
+    padding-top: 10px;
+    margin: 0 auto;
+    border-bottom: 5px solid #eb9376;
+    transition: width 250ms ease-in-out 0s;
+  }
+  .recipe-card-nav h3:hover {
+    cursor: pointer;
+  }
+  .recipe-card-nav h3:hover:after,
+  .recipe-card-nav h3.active:after {
+    width: 100%;
+  }
+
+
+.breadcrumb {
+  padding: 8px 16px;
+  font: 700 14px/20px Source Sans Pro, sans-serif;
+  list-style: none;
+  
+}
+.breadcrumb li {display: inline;}
+.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    font-family: "FontAwesome";
+    content: "\f105";
+}
+.breadcrumb li a {
+  color: black;
+
+}
+
+
+.check-recipe { margin: 30px; } 
+.checklist label { font-size: 24px; }
+.checklist div { 
+  width: 175px; 
+  margin-left: 30px;
+}
+
+
+/*** custom checkboxes ***/
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
