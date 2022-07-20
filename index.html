@@ -9,83 +9,62 @@
     <script src="https://kit.fontawesome.com/b9f9c6ef59.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-
-      <label class="logo">Project Recipe<i class="fa-solid fa-utensils"></i></label>
-      <ul class="ul-nav">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a class="recip" href="#">Recipes</a></li>
-        <li><a class="about" href="#">About</a></li>
-      </ul>
-    </nav>
-
-    <div class="wrapper">
-      <header class="header">
-        <h1>Odin Recipes</h1>
-      </header>
-      <article class="main">
-        <div class="flex-container">
-        <a href="recipes/adobo.html">  
-          <section class="list-card-1">
-            <div class="card">
-              <img class="adobo" src="assets/images/adobo.jpg" alt="Chicken Adobo" style="width:100%">
-              <div class="container">
-                <h3><b>Famous Chicken Adobo</b></h3> 
-                <p> Tender, juicy chicken pieces simmered in a flavorful peppery vinegar sauce.</p> 
-              </div>
-            </div>
-          </section>
-        </a>
-        <section class="list-card-2">
-          <div class="card">
-            <img src="./assets/images/cover.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h3><b>Filipino Beef Steak</b></h3> 
-                <p>This is a very easy recipe to make. A tender cut of beef is sliced thin and marinated with lemon juice and soya sauce for at least an hour or longer.</p>
-            </div>
-          </div>
-        </section>
-        <section class="list-card-3">
-          <div class="card">
-            <img src="./assets/images/cover.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-              <h3><b>John Doe</b></h3> 
-              <p>Tender, juicy chicken pieces simmered in a flavorful peppery vinegar sauce.</p>
-            </div>
-          </div>
-        </section>
-        </div>
-      </article>
-      <aside class="aside">
-        <h1 class="side-header">Most Popular</h1>
-        <div class="list-recipe">
-          <ul>
-            <li><a>Chicken Adobo</a></li>
-            <li><a>Beef Steak</a></li>
-            <li><a>Pinakbet</a></li>
-          </ul>          
-        </div>
-      </aside>
-      
-    </div>
-    <footer class="footer">
-      <hr>
-      <div class="footer-list">
-        <div class="design">
-          <a class="account" href="https://github.com/Arnelarquero">Web Design by Nel Arquero</a>
-          <p style="color: #57606a;">&copy; Copyright 2022</p>
-        </div>
-        <div class="odin-project">
-          <a href="https://www.theodinproject.com/lessons/foundations-recipes" class="project">Project Recipe</a>
-          <img src="./assets/images/odin-logo.png" alt="The Odin Project Logo" class="odin-logo">
-        </div>
-      </div>      
-    </footer>
+   
+    <div class="nav-container">
+      <div class="navbar">
+      <img src="assets/images/tastylogo.png" class="logo">
+      <nav>
+        <ul id="menulist">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Recipe</a></li> 
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <img src="assets/images/bars.png" class="menu-icon" onclick="togglemenu()">
+      </div>
   
+      <div class="row">
+        <div class="col-1">
+          <h2>Odin Recipes</h2>
+          <div class="list-recipe">
+            <ul>
+              <li><a>Chicken Adobo</a></li>
+              <li><a>Beef Steak</a></li>
+              <li><a>Pinakbet</a></li>
+              
+            </ul>          
+          </div>  
+        </div>
+        <div class="col-2">
+          <img src="/assets/images/topfood.jpg" class="topfood" >
+        </div>
+      </div>
+      <footer class="footer">
+        <hr>
+        <div class="footer-list">
+          <div class="design">
+            <a class="account" href="https://github.com/Arnelarquero">Web Design by Nel Arquero</a>
+            <p style="color: #57606a;">&copy; Copyright 2022</p>
+          </div>
+          <div class="odin-project">
+            <a href="https://www.theodinproject.com/lessons/foundations-recipes" class="project">Project Recipe</a>
+            <img src="../assets/images/odin-logo.png" alt="The Odin Project Logo" class="odin-logo">
+          </div>
+        </div>      
+      </footer>  
+    </div>
+     
+    <script>
+      var menulist = document.getElementById("menulist");
+      menulist.style.maxHeight = "0px";
+      function togglemenu(){
+        if(menulist.style.maxHeight== "0px"){
+          menulist.style.maxHeight = "130px";
+        }
+        else{
+          menulist.style.maxHeight = "0px";
+        }
+      }
+    </script>
   </body>
-
 </html>

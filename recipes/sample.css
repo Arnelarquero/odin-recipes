@@ -1,0 +1,274 @@
+.account {
+    background: none !important; 
+    color: #57606a;
+   }
+   .odin-project{
+     padding-top: 30px;;
+   }
+   .project{
+     font-size: 20px;
+     color: #57606a;
+   }
+   .odin-logo {
+       padding: 1px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       max-width: 250px;
+       height: auto;
+     }
+   .wrapper{
+     display: flex;
+     flex-flow: row wrap;
+     text-align: center;
+     
+   }
+   .wrapper-list-1{
+     display: flex;
+     flex-flow: row wrap;
+     text-align: left;
+     }
+   
+   .wrapper-list-1>{
+   
+     padding:10px;
+     margin: auto;
+     flex: 1 100%; 
+   
+   } 
+   .wrapper>*{
+     padding:10px;
+     margin: 10px;
+     flex: 1 100%; 
+   
+   }
+   .header{
+     background:white;
+     height:20px;
+     padding-top: 5px;
+     color: #ce973e;
+   }
+   .footer{
+     background: white;
+     text-align: center;
+   }
+   .footer hr{
+     margin-top: auto;
+     margin-bottom: auto;
+     border: 0;
+     border-top: 1px solid #c9c7c7;
+     width:95%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   .footer-list{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .design {
+     padding:30px 30px;
+   }
+   .main {
+     background: white;
+     height: auto;
+     text-align: center;
+   }
+   
+   
+   .aside {
+     margin: 30px;
+     padding: 15px;
+     height: auto;
+     background: white;
+     font-family: sans-serif;
+     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+   }
+   .side-header{
+     color: #4a4a4a;
+     text-align: center;
+   }
+   @media all and (min-width: 800px){
+     .main{
+       flex: 3;
+     }
+     .aside{
+       order: 1;
+     }
+     .main{
+       order: 2;
+     }
+     .footer{
+       order: 4;
+     }
+     
+   }
+   @media all and (min-width: 600px){
+     .aside{
+       flex: 1;
+     }
+   }
+   a, a:hover, a:focus, a:active {
+     text-decoration: none;
+     color: inherit;
+   }
+   hr {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+   }
+   section div img{
+     height: 250px;
+   }
+   
+   .card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     font: normal 400 14px/20px "Source Sans Pro",sans-serif;
+     text-align: left;
+     height: auto;
+     max-width: auto;
+   }
+   
+   .card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+   
+   .container {
+     padding: 20px 16px;
+   }
+   
+   .flex-container {
+     display: flex;
+     flex-direction: row;
+     height:auto;
+   }
+   
+   .list-card-1 {
+     padding: 10px;
+     flex: 50%;
+   }
+   
+   .list-card-2 {
+     padding: 10px;
+     flex: 50%;
+   }
+   .list-card-3 {
+     padding: 10px;
+     flex: 50%;
+   }
+   
+   @media (max-width: 500px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   }
+   .card .container p {
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     max-width:250px;
+   }
+   .list-recipe{
+     font-family: 'Poppins', sans-serif;
+     padding:10px;
+     line-height: 25px;
+     text-align: center;
+   }
+   .recipe-body {
+     background: #fff;
+     font: 13px "Open Sans", sans-serif;
+     color: #222;
+     text-align: left;
+   }
+   
+   .recipe-card {
+     -webkit-box-shadow: 0px 0px 20px 1px rgba(240, 241, 243, 1);
+     -moz-box-shadow: 0px 0px 20px 1px rgba(240, 241, 243, 1);
+     box-shadow: 0px 0px 20px 1px rgba(240, 241, 243, 1);
+     border: 1px solid #f0f1f3;
+     width: auto;
+     margin: 10px auto;
+   }
+   .recipe-card-body {
+     padding: 20px;
+   }
+   .recipe-card-heading {
+     padding: 0;
+     margin: 0 0 0;
+     color: #444;
+     font: 700 14px/20px Source Sans Pro, sans-serif;
+     font-size: 48px;
+     line-height: 52px;
+   }
+   .recipe-card-subhead {
+     font-size: 13px;
+     color: #555;
+     margin-bottom: 30px;
+   }
+   .recipe-card-ingredients {
+     list-style: none;
+     margin: 0;
+     padding: 1px;
+     margin-left: 10px;
+     column-count: 1;
+   }
+     .recipe-card li {
+       margin-bottom: 5px;
+     }
+     .recipe-card-ingredients li:before {
+       content: "\2022";
+       color: #eb9376;
+       margin-right: 5px;
+     }
+   
+   
+   .recipe-card-nav {
+     margin: 0 0 20px;
+     padding: 0;
+     border-bottom: 1px solid #eb9376;
+   }
+     .recipe-card li {
+       display: inline-block;
+       margin-right: 30px;
+     }
+     h3 {
+       margin: 0;
+       padding: 0;
+     }
+     .recipe-card-nav h3:after {
+       content: "";
+       display: block;
+       width: 0%;
+       padding-top: 10px;
+       margin: 0 auto;
+       border-bottom: 5px solid #eb9376;
+       transition: width 250ms ease-in-out 0s;
+     }
+     .recipe-card-nav h3:hover {
+       cursor: pointer;
+     }
+     .recipe-card-nav h3:hover:after,
+     .recipe-card-nav h3.active:after {
+       width: 100%;
+     }
+   
+   
+   .breadcrumb {
+     padding: 8px 16px;
+     font: 700 14px/20px Source Sans Pro, sans-serif;
+     list-style: none;
+     
+   }
+   .breadcrumb li {display: inline;}
+   .breadcrumb li+li:before {
+       padding: 8px;
+       color: black;
+       font-family: "FontAwesome";
+       content: "\f105";
+   }
+   .breadcrumb li a {
+     color: black;
+   
+   }
+   
+   
