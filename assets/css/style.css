@@ -74,7 +74,7 @@ nav ul li a:hover{
   nav ul{
     width:100%;
     background-color:#f5f6ea;
-    position: absolute;
+    position: fixed;
     top: 90px;
     right: 0;
     z-index: 1;
