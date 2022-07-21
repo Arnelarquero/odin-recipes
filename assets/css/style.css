@@ -43,7 +43,6 @@ nav ul li a{
 }
 nav ul li a:hover{
   color: #ce973e;
-
 }
 .row{
   display: flex;
@@ -59,7 +58,6 @@ nav ul li a:hover{
   font-size: 31px;
   margin: 10px 0;
   text-align: center;
-  color: #ce973e;
 }
 .col-2{
   position: relative;
@@ -125,6 +123,13 @@ nav ul li a:hover{
 .list-recipe ul li{
   list-style: none;
   margin: 5px 0;
+}
+.list-recipe ul li a{
+  text-decoration: none;
+  color: #000;
+}
+.list-recipe ul li a:hover{
+  color: #ce973e;
 }
 .footer{
   background: white;
