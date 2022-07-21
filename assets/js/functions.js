@@ -13,7 +13,7 @@ var menulist = document.getElementById("menulist");
       }
     
 
-      $.get("/../../navigation.html", function(data){
+      $.get("../../navigation.html", function(data){
         $("#nav-container").replaceWith(data);
     });
 
