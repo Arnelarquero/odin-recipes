@@ -5,7 +5,6 @@
 }
 .nav-container{
   width: 100%;
-  min-height: 100vh;
   padding-left: 8%;
   padding-right: 8%;
   box-sizing: border-box;
@@ -116,7 +115,12 @@ nav ul li a:hover{
   .list-recipe{
     text-align: center;
   }
+  .footer-list{
+    flex-direction: column-reverse;
+  }
+  
 }
+
 .list-recipe{
   text-align: center;
 }
@@ -131,51 +135,44 @@ nav ul li a:hover{
 .list-recipe ul li a:hover{
   color: #ce973e;
 }
-.footer{
-  background: white;
+.container{
   text-align: center;
 }
-.footer hr{
-  margin-top: auto;
-  margin-bottom: auto;
-  border: 0;
-  border-top: 1px solid #c9c7c7;
-  width:100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer a{
-  text-decoration: none;
-  color: #000;
-}
-.footer a:hover{
-  color: #ce973e;
-
+.footer{
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 15px 0;
 }
 .footer-list{
   display: flex;
-  justify-content: center;
+}
+footer a{
+  text-decoration: none;
+  color: #000;
+}
+footer a:hover{
+  color: #ce973e;
+}
+.footer-col-1{
+  padding: 35px 0;
+  flex-basis: 50%;
+  position: relative;
+}
+.footer-col-2{
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
-.design {
-  padding:30px 30px;
+.footer-col-2 p{
+  color: #ce973e;
+  font:20px "Fira Sans", serif;
+  padding-bottom: 10px;
 }
-.account {
-  color: #57606a;
- }
-.odin-project{
-   padding-top: 30px;;
- }
-.project{
-   font-size: 20px;
-   color: #57606a;
- }
-.odin-logo {
-     padding: 1px;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 100%;
-     max-width: 250px;
-     height: auto;
+.odin-logo{
+  order: 2;
+}
+.odin-logo img{
+  max-width: 200px;
+  cursor: pointer;
 }

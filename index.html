@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = yes">
     <title>Odin Recipes</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <link href = "assets/css/style.css" rel = "stylesheet">
     <script src="https://kit.fontawesome.com/b9f9c6ef59.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
   </head>
   <body>
    
@@ -15,7 +17,7 @@
       <div class="navbar">
       <img src="assets/images/tastylogo.png" class="logo">
       <nav>
-        <ul id="menulist" style="max-height: 0px;">
+        <ul id="menulist">
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Recipe</a></li> 
           <li><a href="about.html">About</a></li>
@@ -40,27 +42,33 @@
           <img src="assets/images/topfood.jpg" class="topfood" >
         </div>
       </div>
+       
+    </div>
+      <hr>
       <footer class="footer">
-        <hr>
+        <div class="container">
+          
+      
         <div class="footer-list">
-          <div class="design">
-            <a class="account" href="https://github.com/Arnelarquero">Web Design by Nel Arquero</a>
+          <div class="footer-col-1">
+            <a class="account" href="https://github.com/Arnelarquero/odin-recipes">Web Design by Nel Arquero</a>
             <p style="color: #57606a;">&copy; Copyright 2022</p>
           </div>
-          <div class="odin-project">
-            <a href="https://www.theodinproject.com/lessons/foundations-recipes" class="project">Project Recipe</a>
-            <img src="assets/images/odin-logo.png" alt="The Odin Project Logo" class="odin-logo">
-          </div>
-        </div>      
-      </footer>  
-    </div>
-    <script >
-      var menulist = document.getElementById("menulist");
-    
-    
+          <div class="footer-col-2">
+            <div class="odin-logo">
+            <img src="assets/images/odin-logo.png" alt="The Odin Project Logo">
+            </div>
+            <p class="project">Project Recipe</p>
+            </div>
+        </div>   
+        </div>   
+      </footer> 
+      <script>
+          var menulist = document.getElementById("menulist");
+          menulist.style.maxHeight = "0px";
 
-      
-      function togglemenu(){
+     function togglemenu(){    
+
         if(menulist.style.maxHeight== "0px"){
           menulist.style.maxHeight = "130px";
         }
@@ -68,7 +76,11 @@
           menulist.style.maxHeight = "0px";
         }
       }
-    </script> 
+
+    
+
+
+      </script>
        
   </body>
 </html>

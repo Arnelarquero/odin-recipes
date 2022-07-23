@@ -1,5 +1,4 @@
 
-<div class="nav-container">
     <div class="navbar">
       
     <img src="../assets/images/tastylogo.png" class="logo">
@@ -12,12 +11,21 @@
     </nav>
     <img src="../assets/images/bars.png" class="menu-icon" onclick="togglemenu()">
     
-    <script src="../assets/js/functions.js"></script> 
+    
   </div>
 
+<script>
+  var menulist = document.getElementById("menulist");
+      menulist.style.maxHeight = "0px";
 
-</div>
+ function togglemenu(){    
 
-
-
+    if(menulist.style.maxHeight== "0px"){
+      menulist.style.maxHeight = "130px";
+    }
+    else{
+      menulist.style.maxHeight = "0px";
+    }
+  }
+</script>
  
