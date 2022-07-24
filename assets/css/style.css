@@ -140,7 +140,6 @@ nav ul li a:hover{
 }
 .footer{
   width: 100%;
-  box-sizing: border-box;
   overflow: hidden;
   margin: 15px 0;
 }
